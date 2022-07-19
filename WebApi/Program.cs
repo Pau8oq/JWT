@@ -83,12 +83,7 @@ if (app.Environment.IsDevelopment())
 //app.UseHttpsRedirection();
 app.UseCors("AllowCORS");
 
-//app.UseCors(w => w.WithOrigins("https://localhost:4200/")
-//        .AllowAnyMethod()
-//        .AllowAnyHeader()
-//        .AllowCredentials()
-//        .AllowCredentials());
-
+app.ConfigureExceptionHandler();
 
 app.UseAuthentication();
 app.UseAuthorization();

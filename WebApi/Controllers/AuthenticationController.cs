@@ -107,6 +107,13 @@ namespace WebApi.Controllers
             return Ok("some text");
         }
 
+        [HttpGet("test-excpetion")]
+        [AllowAnonymous]
+        public IActionResult TestException()
+        {
+            throw new Exception("some exception");
+        }
+
         private void SetTokenToCookie(string token)
         {
             var cookieOptions = new CookieOptions
