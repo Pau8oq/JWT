@@ -1,0 +1,12 @@
+﻿namespace WebApi.Model
+{
+    public class JWTAuthOptions
+    {
+        public const string JWTAuth = "JWTAuth";
+        public string Secret { get; set; } = string.Empty;
+        public string Issuer { get; set; } = string.Empty;
+        public string Subject { get; set; } = string.Empty;
+        public string Audience { get; set; } = string.Empty;
+
+    }
+}

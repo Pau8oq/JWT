@@ -1,0 +1,14 @@
+
+<h1>Home</h1>
+
+<div *ngIf="userLogged">
+    <button (click)="logout()">Logout</button>
+    <a routerLink="/user-list">Details</a>
+</div>
+
+<div *ngIf="!userLogged">
+    <a routerLink="/login">Login</a>
+    <br>
+    <a routerLink="/register">Register</a>
+</div>
+

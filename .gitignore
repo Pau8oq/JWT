@@ -1,0 +1,10 @@
+/AngularApp/node_modules
+/AngularApp/.vscode
+/.vs
+/packages
+/WebApi/bin
+/WebApi/obj
+/WebAppClient/bin
+/WebAppClient/obj
+/DesktopClient/bin
+/DesktopClient/obj
